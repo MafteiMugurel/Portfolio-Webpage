@@ -74,7 +74,7 @@
   
   .carousel {
     position: relative;
-    padding-top: 75%;
+    padding-top: 50%;
     filter: drop-shadow(0 0 10px #0003);
     perspective: 100px;
   }
@@ -105,7 +105,6 @@
   }
   
   .carousel__slide:before {
-    content: counter(item);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -127,7 +126,7 @@
     .carousel__snapper {
       animation-name: tonext, snap;
       animation-timing-function: ease;
-      animation-duration: 4s;
+      animation-duration: 60s;
       animation-iteration-count: infinite;
     }
   
@@ -146,31 +145,7 @@
   .carousel:focus-within .carousel__snapper {
     animation-name: none;
   }
-  
-  .carousel__navigation {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-  }
-  
-  .carousel__navigation-list,
-  .carousel__navigation-item {
-    display: inline-block;
-  }
-  
-  .carousel__navigation-button {
-    display: inline-block;
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: #333;
-    background-clip: content-box;
-    border: 0.25rem solid transparent;
-    border-radius: 50%;
-    font-size: 0;
-    transition: transform 0.1s;
-  }
+ 
   
   .carousel::before,
   .carousel::after,
@@ -218,4 +193,17 @@
   
   .carousel::after {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+  }
+
+  .image-left {
+    height: 100%;
+    padding: 20px;
+  }
+  .image-right{
+    height: 100%;
+    padding: 20px;
+  }
+  img{ 
+    height: 100%;
+    width: 60%;
   }
