@@ -24,6 +24,9 @@ ul {
     list-style: none;
 
 }
+#navbar li {
+    padding: 0 5px !important; 
+}
 
 .nav {
     display: flex;
@@ -41,13 +44,12 @@ ul {
 }
 
 .welcome-section {
-    display: flex;
-    position: fixed;
+    display: flex; 
     height: 100vh;
     width: 100%;
     justify-content: center;
     flex-direction: column;
-    background-color: red;
+    background-color: darkmagenta;
     align-items: center;
 }
 
@@ -55,3 +57,4 @@ ul {
     text-align: center;
 
 }
+
