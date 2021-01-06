@@ -4,7 +4,6 @@ body {
 
 }
 
-
 #navbar {
     display: flex;
     position: fixed;
@@ -24,6 +23,7 @@ ul {
     list-style: none;
 
 }
+
 #navbar li {
     padding: 0 5px !important; 
 }
