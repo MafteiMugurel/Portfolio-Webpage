@@ -130,6 +130,7 @@ li {
   scroll-snap-align: center;
   display: flex;
   flex-flow: row;
+  background-color: var(--low-opaciti);
 }
 
 @media (hover: hover) {
@@ -174,12 +175,12 @@ li {
 
 .carousel::before,
 .carousel__prev {
-  left: -1rem;
+  left: 0.9rem;
 }
 
 .carousel::after,
 .carousel__next {
-  right: -1rem;
+  right: 0.9rem;
 }
 
 .carousel::before,
@@ -220,9 +221,14 @@ li {
 
 }
 
-.project-tile {
-  background-color: var(--white);
-
+.about-project button {
+  padding: 10px 20px;
+  border-radius: 10%;
+  background-color: var(--mandarina);
+  color: var(--white);
+  border: none;
+  font-size: 35px;
+  font-family: "Brush Script MT";
 }
 
 #projects {
@@ -232,8 +238,14 @@ li {
 }
 
 :root {
+  --low-opaciti: #e57a440f;
   --white: #F5F5F5;
   --black: #001524;
   --red: #A41623;
   --mandarina: #E57A44;
+}
+
+h2.project-tile {
+  color: var(--red);
+  font-size: 32px;
 }

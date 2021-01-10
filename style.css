@@ -3,10 +3,13 @@
     --black: #001524;
     --red: #A41623;
     --mandarina: #E57A44;
+    --low-opaciti: #e57a440f;
 }
 
 body {
     margin: 0;
+    font-family: monospace;
+    font-size: 18px;
 }
 
 #navbar {
@@ -86,19 +89,37 @@ a {
 .contact-details {
     padding: 0 10px;
 }
+
 .arrow {
     width: 50px;
     margin-right: 15px;
 }
-.welcome-text{
-    margin-left: 60px;
-    font-size: 30px;
-    
-}
+
+
+
 .welcome-image {
     height: 100%;
     display: flex;
     flex-flow: column;
     justify-content: flex-end;
     transform: scaleX(-1);
+}
+
+.welcome-text p {
+    text-align: center;
+    color: var(--black);
+    font-size: 30px;
+}
+
+.welcome-text h1 {
+    text-align: center;
+    color: var(--red);
+    font-size: 85px;
+    font-weight: 100;
+    font-family: "Brush Script MT";
+    margin-top: 35%;
+}
+
+.welcome-text {
+    height: 100%;
 }
